@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid';
 import { StyledList, StyledButton } from './ContactList.styled';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from 'api/contacts-api';
+import { deleteContact } from 'redux/contacts/operations';
 
 export const ContactList = ({ items }) => {
   const dispatch = useDispatch();

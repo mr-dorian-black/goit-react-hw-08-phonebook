@@ -1,5 +1,9 @@
 import { createSlice, isAnyOf } from '@reduxjs/toolkit';
-import { fetchContacts, addContact, deleteContact } from 'api/contacts-api';
+import {
+  fetchContacts,
+  addContact,
+  deleteContact,
+} from 'redux/contacts/operations';
 
 const arrApi = [fetchContacts, addContact, deleteContact];
 const arrApiType = type => arrApi.map(api => api[type]);

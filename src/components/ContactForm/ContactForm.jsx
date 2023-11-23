@@ -7,9 +7,9 @@ import {
   StyledField,
   StyledErrorMessage,
 } from './ContactForm.styled';
-import { addContact } from 'api/contacts-api';
+import { addContact } from 'redux/contacts/operations';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts } from 'redux/selectors';
+import { selectContacts } from 'redux/contacts/selectors';
 
 const phonebookSchema = Yup.object().shape({
   name: Yup.string().required('This field is required!'),
